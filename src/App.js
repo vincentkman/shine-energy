@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.scss';
+import './Utilities/KeyFrames.scss'
 
-import '/Users/vincentman/Desktop/Prog/shine-energy/src/Utilities/KeyFrames.scss'
 import { EventEmitter } from 'events';
 
 class App extends React.Component {
@@ -72,14 +72,15 @@ class App extends React.Component {
         <h2 className='subtitle'>Your Account Summary</h2>
         <div className='container container1'>
           <div className='item'>
-            Total Bill: <span>{format(this.state.gas.bill + this.state.elec.bill)}
-            p (£{format((this.state.gas.bill + this.state.elec.bill) / 100)})</span>
+            Total Bill:
+            <span>{format(this.state.gas.bill + this.state.elec.bill)}
+              p (£{format((this.state.gas.bill + this.state.elec.bill) / 100)})</span>
           </div>
         </div>
         <div className='container container2'>
           <div className='item'>
             <label htmlFor='gas'>Gas Reading:</label>
-            <input type='number' max="999" name='gas' 
+            <input type='number' max="999" name='gas'
               onChange={e => this.handleInput(e)} /></div>
           <div className='item'>Gas Reading Entered:
             <span>{format(this.state.gas.current)}</span></div>
@@ -104,7 +105,7 @@ class App extends React.Component {
         <div className='container'>
           <div className='item'>
             <label htmlFor='elec'>Electricity Reading:</label>
-            <input type='number' max="999" name='elec' 
+            <input type='number' max="999" name='elec'
               onChange={e => this.handleInput(e)} />
           </div>
           <div className='item'>Electricty Reading Entered: <span>{format(this.state.elec.current)}</span></div>
@@ -124,7 +125,6 @@ class App extends React.Component {
             <span>{format(this.state.elec.bill)}</span>p (£
             <span id='pound'>{format(this.state.elec.bill / 100)}</span>)
           </div>
-
         </div>
       </div>
     );

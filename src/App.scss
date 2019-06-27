@@ -1,19 +1,14 @@
 @import './Utilities/Mixins.scss'; 
 @import './Utilities/Variables.scss';
+@import './Utilities/Extends.scss';
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  background: #080A52;
-  color: white;
-}
-
-html, body, .App {
-  height: 100vh;
-  width: 100vw;
-  overflow: auto;
+  background: $dark-blue;
+  color: $white;
 }
 
 .App {
@@ -28,46 +23,35 @@ html, body, .App {
     font-size: 40px;
   }
 
-
   label, .item {
+    @extend %cherryText;
     font-size: 30px;
-    color: $cherry; 
-    font-weight: $font-weight--bold;
   }
 }
 
 .container {
   @include grid($gap: 20px);
-  padding: 20px;
-  background-color: $dark-purple;
-  border: 1px solid white;
-  transition: .9s;
-}
+  @extend %box;
 
+  .item {
+    span {
+      color: $white; 
+      margin-left: .4em;
+    }
+    span#pound {
+      margin-left: 0;
+    }
+  }
+  .used {
+    margin: 10px 0 5px 10px;
+    padding: 5px;
+  }
+}
 
 .container1, .container2 {
   margin-bottom: 30px;
 }
 
 input {
-  padding: 10px;
-  margin-left: 10px;
-  border-radius: 5px;
+  @extend %inputbox;
 }
-
-.item {
-  span {
-    color: white; 
-    margin-left: 0.4em;
-  }
-  span#pound {
-    margin-left: 0;
-  }
-}
-
-.used {
-
-  margin: 10px 0 5px 10px;
-  padding: 5px;
-}
-
