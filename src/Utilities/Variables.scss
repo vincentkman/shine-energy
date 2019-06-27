@@ -1,10 +1,3 @@
-// =======================================
-//   Variables
-// =======================================
-
-// Fonts
-$font-url               : 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900';
-$font-stack             : 'Roboto', sans-serif;
 
 // Font Weights
 $font-weight--thin      : 100;
@@ -15,7 +8,6 @@ $font-weight--ultra     : 900;
 
 // Descriptive Base Colors 
 $white          : #fff;
-$light-black    : rgba(0, 0, 0, .5);
 $black          : #0b0b0b;
 $grey           : #9e9e9e;
 $blue           : #4682B4;
@@ -28,16 +20,6 @@ $red            : #ff005b;
 $pink           : #CD6799;
 $yellow         : #F7DF1D;
 
-$soft-red       : #D68C8B;
-
-$light-red      : #E8A0A0;
-$light-orange   : #ff4800;
-$light-blue     : #44AAC0;
-$light-purple   : #DCB3EE;
-$light-grey     : #bbbbbb;
-$light-mulberry : #E1B1EF;
-$light-yellow   : #FFF8DC;
-$light-green    : #33cc33;
 
 $dark-blue      : #080A52;
 $dark-purple    : #070930;
@@ -49,23 +31,7 @@ $strong-blue    : #007bb5;
 
 $cherry         : #EB2188;
 
-// Text
-$base__font-size   : 40px;
-$base__line        : 24px;
-$letter-space      : 5px;
 
 // Border Radius
 $br--default       : 5px;
 $br--round         : 50%;
-
-// Transitions
-$trns-duration     : .5s;
-
-// Layout
-$max-width: 1050px;
-$gutter: 10px;
-
-// Breakpoints
-$break-s: 1px;
-$break-m: 768px;
-$break-l: 1024px;
