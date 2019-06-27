@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0f4e59ad81b8a3d1eae7ae5788e389a2",
+    "revision": "96f18f1809edbaa7b4c93b4d945976e4",
     "url": "/shine-energy/index.html"
   },
   {
